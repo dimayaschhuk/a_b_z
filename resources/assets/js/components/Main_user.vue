@@ -553,6 +553,10 @@
 
                     status:'delete_boss_in_all_1',
                 }).then(response=>{
+
+                    if(response.data== 'його не можна звільнити'){
+                   alert( 'його не можна звільнити');
+                }
                     if(response.data=='ok'){
                     window.location.href = '/';
                 }
@@ -568,6 +572,9 @@
                         id_boss:this.id_boss,
                     status:'delete_automatic',
                 }).then(response=>{
+                    if(response.data== 'його не можна звільнити'){
+                    alert( 'його не можна звільнити');
+                }
                     if(response.data=='ok'){
                         alert('операція пройшла успішно');
                     window.location.href = '/user/list/';
@@ -582,12 +589,16 @@
 
 
             get_people_boss:function () {
+
                 axios.post(`/user/delete`, {
 
                     status:'get_people_boss',
                     id:this.id,
                 }).then(response => {
-                    this.result_boss_people=response.data
+                    if(response.data== 'його не можна звільнити'){
+                    alert( 'його не можна звільнити');
+                }else {this.result_boss_people=response.data}
+
                 });
             },
 

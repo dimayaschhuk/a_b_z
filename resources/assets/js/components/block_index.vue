@@ -36,7 +36,7 @@ data(){
                                 }
 //
                             });
-                            alert('завантажуются підлеглі ' + name+'?');
+                            alert('завантажити підлеглих ' + name+'?');
                             break;
                         case 2:
                             var name;
@@ -51,7 +51,7 @@ data(){
                                     });
                                 }
                             });
-                            alert('завантажуются підлеглі ' +name);
+                            alert('завантажити підлеглих ' + name+'?');
                             break;
                         case 3:
                             var name;
@@ -62,17 +62,16 @@ data(){
                                             iten['children'].filter(function (itez) {
                                                 if (itez.name == data[2][0]) {
                                                     itez.children = response.data;
-                                                     name =iten.name+' '+iten.patronymic+' '+iten.surname;
-//                                                    this.name=itez.name;
 
-                                                     name =iten.name+' '+iten.patronymic+' '+iten.surname;
+
+                                                     name =itez.name+' '+itez.patronymic+' '+itez.surname;
                                                 }
                                             });
                                         }
                                     });
                                 }
                             });
-                            alert('завантажуются підлеглі ' + this.name);
+                            alert('завантажити підлеглих ' + name+'?');
                             break;
                         case 4:
                             var name;
@@ -85,7 +84,7 @@ data(){
                                                     itez['children'].filter(function (itex) {
                                                         if (itex.name == data[2][0]) {
                                                             itex.children = response.data;
-                                                             name =iten.name+' '+iten.patronymic+' '+iten.surname;
+                                                             name =itex.name+' '+itex.patronymic+' '+itex.surname;
 //                                                            this.name=itex.name;
 
                                                         }
@@ -96,34 +95,233 @@ data(){
                                     });
                                 }
                             });
-                            alert('завантажуются підлеглі ' + this.name);
+                            alert('завантажити підлеглих ' + name+'?');
                             break;
                         case 5:
                             var name;
-                            alert('Перебор');
+                            this.root['children'].filter(function (item) {
+                                if (item.name == data[2][4]) {
+                                    item['children'].filter(function (iteq) {
+                                        if (iteq.name == data[2][3]) {
+                                            iteq['children'].filter(function (iten) {
+                                                if (iten.name == data[2][2]) {
+                                                    iten['children'].filter(function (itez) {
+                                                        if (itez.name == data[2][1]) {
+                                                            itez['children'].filter(function (itex) {
+                                                                if (itex.name == data[2][0]) {
+                                                                    itex.children = response.data;
+                                                                    name =itex.name+' '+itex.patronymic+' '+itex.surname;
+
+                                                                }
+                                                            });
+                                                        }
+                                                    });
+                                                }
+                                            });
+                                        }
+                                    });
+                                }
+                            });
+                            alert('завантажити підлеглих ' + name+'?');
                             break;
                         case 6:
-                            alert('Перебор');
+                            var name;
+                            this.root['children'].filter(function (item) {
+                                if (item.name == data[2][5]) {
+                                    item['children'].filter(function (itew) {
+                                        if (itew.name == data[2][4]) {
+                                            itew['children'].filter(function (iteq) {
+                                                if (iteq.name == data[2][3]) {
+                                                    iteq['children'].filter(function (iten) {
+                                                        if (iten.name == data[2][2]) {
+                                                            iten['children'].filter(function (itez) {
+                                                                if (itez.name == data[2][1]) {
+                                                                    itez['children'].filter(function (itex) {
+                                                                        if (itex.name == data[2][0]) {
+                                                                            itex.children = response.data;
+                                                                            name =itex.name+' '+itex.patronymic+' '+itex.surname;
+
+                                                                        }
+                                                                    });
+                                                                }
+                                                            });
+                                                        }
+                                                    });
+                                                }
+                                            });
+                                        }
+                                    });
+                                }
+                            });
+                            alert('завантажити підлеглих ' + name+'?');
                             break;
                         case 7:
-                            alert('Перебор');
+                            var name;
+                            this.root['children'].filter(function (item) {
+                                if (item.name == data[2][6]) {
+                                    item['children'].filter(function (itee) {
+                                        if (itee.name == data[2][5]) {
+                                            itee['children'].filter(function (itew) {
+                                                if (itew.name == data[2][4]) {
+                                                    itew['children'].filter(function (iteq) {
+                                                        if (iteq.name == data[2][3]) {
+                                                            iteq['children'].filter(function (iten) {
+                                                                if (iten.name == data[2][2]) {
+                                                                    iten['children'].filter(function (itez) {
+                                                                        if (itez.name == data[2][1]) {
+                                                                            itez['children'].filter(function (itex) {
+                                                                                if (itex.name == data[2][0]) {
+                                                                                    itex.children = response.data;
+                                                                                    name =itex.name+' '+itex.patronymic+' '+itex.surname;
+
+                                                                                }
+                                                                            });
+                                                                        }
+                                                                    });
+                                                                }
+                                                            });
+                                                        }
+                                                    });
+                                                }
+                                            });
+                                        }
+                                    });
+                                }});
+                            alert('завантажити підлеглих ' + name+'?');
                             break;
                         case 8:
-                            alert('Перебор');
+                            var name;
+                            this.root['children'].filter(function (item) {
+                                if (item.name == data[2][7]) {
+                                    item['children'].filter(function (iter) {
+                                        if (iter.name == data[2][6]) {
+                                            iter['children'].filter(function (itee) {
+                                                if (itee.name == data[2][5]) {
+                                                    itee['children'].filter(function (itew) {
+                                                        if (itew.name == data[2][4]) {
+                                                            itew['children'].filter(function (iteq) {
+                                                                if (iteq.name == data[2][3]) {
+                                                                    iteq['children'].filter(function (iten) {
+                                                                        if (iten.name == data[2][2]) {
+                                                                            iten['children'].filter(function (itez) {
+                                                                                if (itez.name == data[2][1]) {
+                                                                                    itez['children'].filter(function (itex) {
+                                                                                        if (itex.name == data[2][0]) {
+                                                                                            itex.children = response.data;
+                                                                                            name =itex.name+' '+itex.patronymic+' '+itex.surname;
+
+                                                                                        }
+                                                                                    });
+                                                                                }
+                                                                            });
+                                                                        }
+                                                                    });
+                                                                }
+                                                            });
+                                                        }
+                                                    });
+                                                }
+                                            });
+                                        }
+                                    });
+                                }});
+                            alert('завантажити підлеглих ' + name+'?');
                             break;
                         case 9:
-                            alert('Перебор');
+                            var name;
+                            this.root['children'].filter(function (item) {
+                                if (item.name == data[2][8]) {
+                                    item['children'].filter(function (itet) {
+                                        if (itet.name == data[2][7]) {
+                                            itet['children'].filter(function (iter) {
+                                                if (iter.name == data[2][6]) {
+                                                    iter['children'].filter(function (itee) {
+                                                        if (itee.name == data[2][5]) {
+                                                            itee['children'].filter(function (itew) {
+                                                                if (itew.name == data[2][4]) {
+                                                                    itew['children'].filter(function (iteq) {
+                                                                        if (iteq.name == data[2][3]) {
+                                                                            iteq['children'].filter(function (iten) {
+                                                                                if (iten.name == data[2][2]) {
+                                                                                    iten['children'].filter(function (itez) {
+                                                                                        if (itez.name == data[2][1]) {
+                                                                                            itez['children'].filter(function (itex) {
+                                                                                                if (itex.name == data[2][0]) {
+                                                                                                    itex.children = response.data;
+                                                                                                    name =itex.name+' '+itex.patronymic+' '+itex.surname;
+
+                                                                                                }
+                                                                                            });
+                                                                                        }
+                                                                                    });
+                                                                                }
+                                                                            });
+                                                                        }
+                                                                    });
+                                                                }
+                                                            });
+                                                        }
+                                                    });
+                                                }
+                                            });
+                                        }
+                                    });
+                                }});
+                            alert('завантажити підлеглих ' + name+'?');
                             break;
                         case 10:
-                            alert('Перебор');
+                            var name;
+                            this.root['children'].filter(function (item) {
+                                if (item.name == data[2][9]) {
+                                    item['children'].filter(function (itey) {
+                                        if (itey.name == data[2][8]) {
+                                            itey['children'].filter(function (itet) {
+                                                if (itet.name == data[2][7]) {
+                                                    itet['children'].filter(function (iter) {
+                                                        if (iter.name == data[2][6]) {
+                                                            iter['children'].filter(function (itee) {
+                                                                if (itee.name == data[2][5]) {
+                                                                    itee['children'].filter(function (itew) {
+                                                                        if (itew.name == data[2][4]) {
+                                                                            itew['children'].filter(function (iteq) {
+                                                                                if (iteq.name == data[2][3]) {
+                                                                                    iteq['children'].filter(function (iten) {
+                                                                                        if (iten.name == data[2][2]) {
+                                                                                            iten['children'].filter(function (itez) {
+                                                                                                if (itez.name == data[2][1]) {
+                                                                                                    itez['children'].filter(function (itex) {
+                                                                                                        if (itex.name == data[2][0]) {
+                                                                                                            itex.children = response.data;
+                                                                                                            name =itex.name+' '+itex.patronymic+' '+itex.surname;
+
+                                                                                                        }
+                                                                                                    });
+                                                                                                }
+                                                                                            });
+                                                                                        }
+                                                                                    });
+                                                                                }
+                                                                            });
+                                                                        }
+                                                                    });
+                                                                }
+                                                            });
+                                                        }
+                                                    });
+                                                }
+                                            });
+                                        }
+                                    });
+                                }});
+                            alert('завантажити підлеглих ' + name+'?');
                             break;
                         default:
-                            alert('системою передюачно иерархию до 10 рівнів');
+                            alert('системою передюачно іерархию до 10 рівнів');
                     }
 //                    this.root['children'][0].children=response.data;
        ;
                 }else {
-                            alert('ytvf gslktukb[')
+                            alert('в даного співробітника нема підлеглих')
                 }
             });
 console.log(data[2]);

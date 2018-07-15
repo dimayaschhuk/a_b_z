@@ -12,8 +12,13 @@ class UserController extends Controller
     {
         switch ($request['status']) {
             case 'delete_boss_in_all_1':
+                $people = People::find($request['id']);
+                if($people->id_boss===0){
+                    return 'його не можна звільнити';
+                }
                 $request->session()->put('flag','ok');
                 $request->session()->put('old_boss',$request['id']);
+
 
                 return 'ok';
                 break;
@@ -77,6 +82,10 @@ if($request['123']==='123'){$flag=true;}
                 return 'ok';
                 break;
             case 'delete_automatic':
+                $people = People::find($request['id']);
+                if($people->id_boss===0){
+                    return 'його не можна звільнити';
+                }
                 $peoples=People::where('id_boss',$request['id'])->get();
                 $boss=People::where('id_boss',$request['id_boss'])->where('id','!=',$request['id'])->get();
 
@@ -166,6 +175,9 @@ return 'ok';
 
             case 'get_people_boss':
                 $people = People::find($request['id']);
+                if($people->id_boss===0){
+                    return 'його не можна звільнити';
+                }
                 $request->session()->put('boss',$people);
                 $people->delete();
                 $people = People::where('id_boss', $request['id'])->get();
