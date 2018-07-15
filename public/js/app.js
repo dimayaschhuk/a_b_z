@@ -52068,7 +52068,7 @@ exports = module.exports = __webpack_require__(2)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -52079,6 +52079,8 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
 //
 //
 //
@@ -52460,6 +52462,12 @@ var render = function() {
       "p",
       { attrs: { "data-toggle": "modal", "data-target": _vm.id_modal_button } },
       [_vm._v("Посада-" + _vm._s(_vm.position))]
+    ),
+    _vm._v(" "),
+    _c(
+      "p",
+      { attrs: { "data-toggle": "modal", "data-target": _vm.id_modal_button } },
+      [_vm._v("Дата прийому на роботу-" + _vm._s(_vm.created_at.date))]
     )
   ])
 }
@@ -52493,14 +52501,14 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "col-lg-6" }, [_c("h5", [_vm._v("name")])])
+    return _c("div", { staticClass: "col-lg-6" }, [_c("h5", [_vm._v("Ім'я")])])
   },
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "col-lg-6" }, [
-      _c("h5", [_vm._v("patronymic")])
+      _c("h5", [_vm._v("По батькові")])
     ])
   },
   function() {
@@ -52508,7 +52516,7 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "col-lg-6" }, [
-      _c("h5", [_vm._v("surname")])
+      _c("h5", [_vm._v("Призвіще")])
     ])
   },
   function() {
@@ -52516,7 +52524,7 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "col-lg-6" }, [
-      _c("h5", [_vm._v("position")])
+      _c("h5", [_vm._v("Посада")])
     ])
   },
   function() {
@@ -52524,7 +52532,7 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "col-lg-6" }, [
-      _c("h5", [_vm._v("name_boss")])
+      _c("h5", [_vm._v("Ім'я керівника")])
     ])
   },
   function() {
@@ -52532,7 +52540,7 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "col-lg-6" }, [
-      _c("h5", [_vm._v("salary")])
+      _c("h5", [_vm._v("зарплата")])
     ])
   }
 ]

@@ -25,29 +25,30 @@
                             </div>
                             <div class="col-lg-7">
                                 <div class="row" >
-                                    <div class="col-lg-6"><h5>name</h5></div>
+                                    <div class="col-lg-6"><h5>Ім'я</h5></div>
                                     <div class="col-lg-6"> <input type="text" disabled class="form-control" v-model="name" ></div>
                                 </div>
                                 <div class="row" >
-                                    <div class="col-lg-6"><h5>patronymic</h5></div>
+                                    <div class="col-lg-6"><h5>По батькові</h5></div>
                                     <div class="col-lg-6"> <input type="text" disabled class="form-control" v-model="patronymic" ></div>
                                 </div>
                                 <div class="row" >
-                                    <div class="col-lg-6"><h5>surname</h5></div>
+                                    <div class="col-lg-6"><h5>Призвіще</h5></div>
                                     <div class="col-lg-6"> <input type="text" disabled class="form-control" v-model="surname" ></div>
                                 </div>
                                 <div class="row" >
-                                    <div class="col-lg-6"><h5>position</h5></div>
+                                    <div class="col-lg-6"><h5>Посада</h5></div>
                                     <div class="col-lg-6"> <input type="text" disabled class="form-control" v-model="position" ></div>
                                 </div>
                                 <div class="row" >
-                                    <div class="col-lg-6"><h5>name_boss</h5></div>
+                                    <div class="col-lg-6"><h5>Ім'я керівника</h5></div>
                                     <div class="col-lg-6"> <input type="text" disabled class="form-control" v-model="name_boss" ></div>
                                 </div>
                                 <div class="row" >
-                                    <div class="col-lg-6"><h5>salary</h5></div>
+                                    <div class="col-lg-6"><h5>зарплата</h5></div>
                                     <div class="col-lg-6"> <input type="number" disabled class="form-control" v-model="salary" ></div>
                                 </div>
+
                             </div>
                         </div>
 
@@ -61,6 +62,7 @@
         <p data-toggle="modal" v-bind:data-target='id_modal_button'>{{name}}  {{patronymic}}  {{surname}}</p>
         <p data-toggle="modal" v-bind:data-target='id_modal_button'>Начальник-{{name_boss}}</p>
         <p data-toggle="modal" v-bind:data-target='id_modal_button'>Посада-{{position}}</p>
+        <p data-toggle="modal" v-bind:data-target='id_modal_button'>Дата прийому на роботу-{{created_at.date}}</p>
 
 
 
